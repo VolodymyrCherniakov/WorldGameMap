@@ -20,7 +20,7 @@ public class Pattern {
     public Tile getPattern(int index){
         return tiles.get(index);
     }
-
+    public int getSize(){return tiles.size();}
     public ArrayList<Tile> getTiles(){
         return tiles;
     }
@@ -34,28 +34,10 @@ public class Pattern {
         }
         return result;
     }
-    public ArrayList<Tile> isFitToDown(Tile t){
-        ArrayList<Tile> result = new ArrayList<Tile>();
-        for(int i = 0; i<12;i++){
-            if(tiles.get(i).getUp() == t.getDown()){
-                result.add(tiles.get(i));
-            }
-        }
-        return result;
-    }
     public ArrayList<Tile> isFitToLeft(Tile t){
         ArrayList<Tile> result = new ArrayList<Tile>();
         for(int i = 0; i<12;i++){
             if(tiles.get(i).getRight() == t.getLeft()){
-                result.add(tiles.get(i));
-            }
-        }
-        return result;
-    }
-    public ArrayList<Tile> isFitToRight(Tile t){
-        ArrayList<Tile> result = new ArrayList<Tile>();
-        for(int i = 0; i<12;i++){
-            if(tiles.get(i).getLeft() == t.getRight()){
                 result.add(tiles.get(i));
             }
         }

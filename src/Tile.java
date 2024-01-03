@@ -22,4 +22,16 @@ public class Tile {
     public boolean getRight(){
         return this.right;
     }
+    public boolean isEqual(Tile t){
+        if(up != t.up){
+            return false;
+        }if(down != t.down) {
+            return false;
+        }if(left != t.left){
+            return false;
+        }if(right!=t.right){
+            return false;
+        }
+        return true;
+    }
 }
