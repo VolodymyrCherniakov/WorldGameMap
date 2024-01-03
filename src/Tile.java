@@ -4,22 +4,22 @@ public class Tile {
     private boolean right;
     private boolean down;
 
-    Tile(boolean up, boolean left, boolean right, boolean down){
+    public Tile(boolean up, boolean left, boolean right, boolean down){
         this.up = up;
         this.down = down;
         this.left = left;
         this.right = right;
     }
-    boolean getUp(){
+    public boolean getUp(){
         return this.up;
     }
-    boolean getDown(){
+    public boolean getDown(){
         return this.down;
     }
-    boolean getLeft(){
+    public boolean getLeft(){
         return this.left;
     }
-    boolean getRight(){
+    public boolean getRight(){
         return this.right;
     }
 }
